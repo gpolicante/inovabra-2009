@@ -1,0 +1,8 @@
+---
+# vars file for gcp
+
+service_account_email:  inovabra@desenvolvimento-212121.iam.gserviceaccount.com 
+credentials_file: /etc/ansible/playbooks/inovaBRA/key.json
+project_id: desenvolvimento-212121
+machine_type: n1-standard-1 
+image: debian-9 

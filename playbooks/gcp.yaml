@@ -1,0 +1,16 @@
+--- 
+
+- name: create instance gcp 
+  hosts: localhost
+  tasks:
+          - name: criando a instancia 
+            gce: 
+             instance_names: my-test-instance1
+             zone: us-central1-a 
+             machine_type: n1-standard-1 
+             image: debian-8
+             state: present
+             service_account_email: teste-349@devsecops-212714.iam.gserviceaccount.com
+             credentials_file: /etc/ansible/playbooks/key-teste.json
+             project_id: devsecops-212714
+             disk_size: 32

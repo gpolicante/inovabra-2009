@@ -1,0 +1,17 @@
+- name: criando multiplas instancias
+  gce:
+    instance_names: web1,web2 
+    zone: us-central1-a
+    machine_type: n1-standard-1
+    image: debian-8
+    state: present
+    service_account_email: "{{ service_account_email }}"
+    credentials_file: "{{ credentials_file }}"
+    project_id: "{{ project_id }}"
+    metadata : '{ "startup-script" : "apt-get update" }'
+    tags:
+      - http-server
+    pem_file: /etc/ansible/playbooks/inovaBRA/inovabra.pem.pub
+  
+
+

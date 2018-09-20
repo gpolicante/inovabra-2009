@@ -1,0 +1,19 @@
+---
+# tasks file for aws
+
+
+
+- name: criando chave de ssh devops 
+  include: key.yaml
+
+- name: criando firewall para servidores web
+  include: secgroup.yaml
+
+- name: criando o loadbalance
+  include: loadbalance.yaml
+
+- name: criando maquinas ec2 
+  include: ec2.yaml 
+
+ 
+ 

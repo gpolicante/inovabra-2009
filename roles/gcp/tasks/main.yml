@@ -1,0 +1,9 @@
+---
+# tasks file for gcp
+
+
+- name: criando loadbalancer
+  include: loadbalancer.yaml
+
+
+

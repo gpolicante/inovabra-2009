@@ -1,0 +1,41 @@
+
+- name: criando servidores web instancia aws 
+  ec2_instance:
+     name: "{{item.name}}"
+     aws_access_key: "{{ aws_access_key }}"
+     aws_secret_key: "{{aws_secret_key}}"
+     state: present
+     key_name: "{{item.key}}" 
+     instance_type: "{{item.type}}"
+     security_group: web-inova
+     region: us-east-1
+     image_id: "{{item.image}}"
+     wait: no
+     tags:
+      application: web
+     network:
+             assign_public_ip: true 
+     user_data: |
+            #!/bin/bash
+            sudo apt-get update
+            sudo apt-get install nginx -y
+            echo " Sou devops" > /var/www/html/index.html
+  register: instance
+  with_items:
+          - {name: web01, type: t2.medium, key: inovabra, image: ami-04169656fea786776 }
+          - {name: web02,  type: t2.medium, key: inovabra, image: ami-04169656fea786776 }
+- name: adicionando id da maquina
+  shell: " ansible localhost -m ec2_remote_facts -a 'region=us-east-1'   | grep web-inova -A4   | sed 's/\"/ /g' | grep id | awk '{print $3}' "  
+  register: id
+
+     
+- name: adicionando as maquinas no lb
+  ec2_elb:
+          state: present
+          ec2_elbs: load-balancer
+          region: us-east-1
+          instance_id: "{{item}}"
+  with_items:        
+           - "{{ id.stdout_lines[0] }}"
+           - "{{ id.stdout_lines[1] }}" 
+

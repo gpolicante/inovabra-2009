@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "desenvolvimento-212121",
+  "private_key_id": "dfb29b02e4d95fcc5781e052a5061efcc436442b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCOEleD4+kk2VYj\ntfO7j+3zlaySgCpgVc//7DVuc91ieFwVwXw+/+ejXoEcDCWpiSDOPwpT3ziHCfBk\nu7glDvvoKNS6aPFqngdTvj5CQDqRZXN17B9tSj4DgHjrD/M1+X71yH+Z6BCILra/\nO37yjU/MrhVASabnoGWkKI5njHls0ihwtFvYRinCt8b1wlJYG7MikMVnxcCW6aal\n73DiqOIFN+MZo8RDaGgIkelgUJIWR9ugI7o/Icy31ISs4lWveO4Gmk3SLpP7h1iP\nr/TwX+DcuTkBIWpqlieNgZWvFrZsL+kbR9rwTmRuLt5vDaHl2dIctMtFXnu1Oimx\nsuFT2zSbAgMBAAECggEAEsHILSEPfG53SXKx0a8QdurpZFQohByAQCUi7si8T05d\ntf+cFEM8BV0qRZYy+L2ih6haCDW95FJDG0GPb9EZIA8X+t51FSL1C7DfzmZldSHE\nSyrYAVlec57oF/y8mwEsKm4ErsCtQhWMyhWkToiqovbO1nSC5SzPjotONcydkWjB\nUwsDRhRMsjs8KgoVxrEUo8wMXR7ZECmsogJXxRK2lQD3dbmFIdtSFhSuoS7dEITN\n51uaBAAaHy1fFQHlLANzMsAzxwzyYK5htvsItG2YJyd8z9GPxWdWXs4dd5Kq3o+H\nQt6ELGTno8xP5FPDZqsZVK6C0QmboHmZpogY1mlNdQKBgQDAXJFA4pVqqWVG2KZ3\n0+oWGJ8cFcI9BbIr2NvnK2zgCRPh1BUwABfKKHgHQJA0PN3QcpIXmP2A0usGlYG6\nqJt4uwlG7c58Ea3dE9stTospiCztljIyf9893KQ0r4j/cRTSIgeET3pOUIWRLf7+\nZGR+uft2V4buvKgdpKdaWpwy9wKBgQC9EqINkae6qPQbVTZ8t8wmgLrCH7mDCMy0\n9p3v1lDco9KRfK2EM3FmjQr+sbBLKy5p6QQcSs3EJD4tWjq+cegWoE5d8Z+l5Zid\nx2dCOe2NR7A6kuFiSUVSKGGUXsZYfRVxpT8BdxgL26eQuQb0Q9Q18D4O7Npi2ge5\nlqz08pW+fQKBgEFnd+/S2rDQdeH3yeoWQJJQvtCiyU9MP39PFb3s8vDdxUfUf3u5\nnF0dE2qL1jwcseKtAeVKHG+Px1+Ot/RKXcpX9diLBNkEfdQcazplaUWuym/h0KGA\n/tueyKotQOxxe33TGjEvgMtd73wkYn4GjnDUNZ7QNc24kYS6tjgvdMqTAoGAeKKl\n4RB5O2DHd5UUEdlXmY1zG58QR2na6u+bb8aHi2+/T3KEZ6BHD46YYE9RU3S2xX6W\nT9LunOIfBeLXLmIRGjaoKcqb+UaX7Luox5mcVxNRft3ujj5/y17We8tItHcCsqMj\nozSwlAhPTsivhjSs9slVX0KCSKYiXaikrBkHsCUCgYEAvattdk34fmS+GqjQBLkA\nt7OlrZ0dqGbsgktuPwFs4TdQMfAZqEpKF182HkKVWlXq0eRCDCJHzXI4DdBW7Z+A\nNsLHqJS2F2uP0/o6MlAU0QmYYv2UBCxN545Kl4gPN8Y32rlafp1zNVyj94QCLSg9\nHjBG7UQiETJnh8rQWpfx45k=\n-----END PRIVATE KEY-----\n",
+  "client_email": "inovabra@desenvolvimento-212121.iam.gserviceaccount.com",
+  "client_id": "107744351011226928216",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/inovabra%40desenvolvimento-212121.iam.gserviceaccount.com"
+}

@@ -1,0 +1,11 @@
+
+- name: criando o loadbalancer
+  ec2_elb_lb:
+          name: load-balancer
+          state: present
+          region: us-east-1
+          zones: us-east-1a
+          listeners:
+                  - protocol: http
+                    load_balancer_port: 80
+                    instance_port: 80 

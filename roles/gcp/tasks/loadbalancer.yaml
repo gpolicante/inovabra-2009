@@ -1,0 +1,11 @@
+
+- name: criando o loadbalancer
+  gce_lb:
+          name: loadbalancer-inova1
+          region: us-central1
+          members: [ "us-central1-a/web1", "us-central1-a/web2" ]
+          httphealthcheck_port: 80
+          service_account_email: "{{ service_account_email }}"
+          credentials_file: "{{ credentials_file }}"
+          project_id: "{{ project_id }}"
+

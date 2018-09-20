@@ -1,0 +1,6 @@
+
+- name: Create SSH Group to login dynamically to EC2 Instance
+  add_host: 
+    hostname: "{{ item.instance_id }}"
+    groupname: ec2_server
+  with_items: "{{ ec2_instance.instances }}"

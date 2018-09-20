@@ -1,0 +1,11 @@
+---
+- name: hello world
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: criando usuario
+            user:
+                    name: devops
+                    password: '$1$lCUqxL1Q$mgrXNxUDDhdYLj2ImPzaT.' 
+                    shell: /bin/bash
+                    state: absent

@@ -1,0 +1,16 @@
+---
+- name: create instance aws 
+  hosts: localhost
+  tasks:
+          - name: instance ec2 test
+            ec2:
+                    key_name: devolps
+                    instance_type: t2.micro
+                    region: us-east-2
+                    image: ami-6a003c0f
+                    wait: yes
+                    group: default
+                    count: 1 
+                    # vpc_subnet_id: vpc-3474295c
+                    
+

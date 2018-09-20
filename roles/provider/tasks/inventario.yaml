@@ -1,0 +1,10 @@
+
+- name: pegando ip das maquinas GCP 
+  shell:  gcloud compute instances describe "{{item}}" | grep natIP | awk '{print$2}' 
+  with_items:
+      - web1
+      - web2 
+  register: ipgcp
+
+
+

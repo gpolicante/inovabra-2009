@@ -1,0 +1,8 @@
+
+- name: criando a chave devops para aws 
+  ec2_key:
+    name: inovabra
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{aws_secret_key}}"
+    region:  us-east-1
+    key_material: "{{ lookup('file', '/etc/ansible/playbooks/inovaBRA/inovabra.pem.pub') }}"

@@ -1,0 +1,8 @@
+---
+# tasks file for provider
+
+- name: criando inventario cloud 
+  include: inventario.yaml
+
+- name: iniciando o provider
+  include: ansible.yaml

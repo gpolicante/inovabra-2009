@@ -1,0 +1,10 @@
+
+- name: instalando apache2
+  apt:
+   name: apache2
+   state: present
+
+- name: criando a index devops
+  template:    
+   src: templates/index
+   dest: /var/www/html/index.html

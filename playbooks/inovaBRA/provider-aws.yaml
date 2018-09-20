@@ -1,0 +1,5 @@
+- name: chamando a role da aws 
+  hosts: localhost
+  roles:
+     - aws 
+

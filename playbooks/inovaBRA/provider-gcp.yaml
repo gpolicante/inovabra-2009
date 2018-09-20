@@ -1,0 +1,4 @@
+- name: provisionando infraestrutura na GCP 
+  hosts: localhost 
+  roles: 
+   - gcp
